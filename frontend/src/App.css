@@ -1,0 +1,256 @@
+.homePageWrapper {
+  display: flex;
+  align-items: stretch; /* Stretch the left column to match the height of the whole screen */
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+
+}
+
+.formWrapper {
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #4aee88;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.homePageLogo {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.inputBox {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+  background: #4aed88;
+  width: 100px;
+  margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+  background: #2b824c;
+}
+
+.createInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn {
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+  color: #368654;
+  border-color: #368654;
+}
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px; /* Added a third column for the right aside */
+  grid-template-rows: auto 1fr auto; /* Added rows for top, main content, and bottom */
+  height: 100vh;
+}
+
+.aside {
+  background: #212121;
+  padding: 16px;
+  color: #fff;
+  border-top-right-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  /* height: 100vh;Take up remaining vertical space */
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: inherit;
+
+}
+.modal-backdrop {
+  z-index: auto !important; /* Set this value to whatever you need */
+
+}
+
+.rightAside {
+  display: none;
+  background:#171717;
+  padding: 16px;
+  color: #fff;
+  width: 17%;
+  position: fixed; /* or use position: absolute; */
+  top: 0; /* Adjust top positioning if needed */
+  right: 0; /* Positioning the div to the right */
+  height: 100vh; /* Take up remaining vertical space */
+  border-top-left-radius: 20px; /* Adjust border-radius for the left side */
+}
+@media (min-width: 768px) {
+  .rightAside{
+    display: block;
+
+  }
+}
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-text {
+    font-size: 3vw;
+  }
+}
+
+/* 
+.rightasideInner{
+  flex: 1;
+} */
+
+
+.aisearchSpace{
+  
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color:#0E1117;
+  border-radius: 20px;
+  height: 70vh;
+
+}
+
+/* compiler div */
+
+.bottomCenter {
+  display: none;
+  background: #1B1C1E;
+  color: #fff;
+  position: fixed;
+  width: 62.4%;
+  bottom: 0;
+  left: 20.5%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .bottomCenter {
+    display: block;
+    transform: translateY(70%);
+  }
+}
+
+
+
+.aside {
+  background:#171717;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+    /* height: 100vh; */
+    /* border-bottom-right-radius: 20px; */
+    border-top-right-radius: 20px;
+}
+.asideInner {
+  flex: 1;
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color:#212121;
+  border-radius: 20px;
+  height: 50vh;
+  
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  margin-left: px;
+  
+}
+.userName {
+  margin-top: 10px;
+ 
+}
+
+.logo {
+  border-bottom: 1px ;
+  padding-bottom: 10px;
+  
+}
+
+.logoImage {
+  height: 60px;
+}
+
+.leaveBtn {
+  width: 100%;
+  margin-top: 20px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.CodeMirror {
+  min-height: calc(70vh - 20px);
+  font-size: 15px;
+  line-height: 1.6;
+  padding-top: 20px;
+  height: auto;
+  ::-webkit-scrollbar {display:none;}
+ 
+}
